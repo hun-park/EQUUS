@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"fpga_top": {
+			"proto_instances": {
+			}
+		}
+	}
+}

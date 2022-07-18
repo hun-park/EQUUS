@@ -1,0 +1,16 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
+| Date         : Tue May 10 10:58:25 2022
+| Host         : yuumi running 64-bit Ubuntu 18.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fpga_top_LOGIC_TOP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fpga_top_LOGIC_TOP_0_0 from user.org:user:LOGIC_TOP:12.0 (Rev. 2) to user.org:user:LOGIC_TOP:13.0 (Rev. 3)
+

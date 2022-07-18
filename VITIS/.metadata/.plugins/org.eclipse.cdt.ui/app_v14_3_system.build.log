@@ -1,0 +1,10 @@
+14:20:05 **** Build of configuration Debug for project app_v14_3_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/hpark/equus/VITIS/v14_3_wrapper/export/v14_3_wrapper/v14_3_wrapper.xpfm -domains standalone_domain -bifpath /home/hpark/equus/VITIS/app_v14_3_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/hpark/equus/VITIS/v14_3_wrapper/export/v14_3_wrapper/v14_3_wrapper.xpfm --sys_config v14_3_wrapper --bif /home/hpark/equus/VITIS/app_v14_3_system/Debug/system.bif --bitstream /home/hpark/equus/VITIS/app_v14_3/_ide/bitstream/v14_3_wrapper.bit --elf /home/hpark/equus/VITIS/app_v14_3/Debug/app_v14_3.elf,ps7_cortexa9_0
+creating BOOT.BIN using /home/hpark/equus/VITIS/app_v14_3/_ide/bitstream/v14_3_wrapper.bit
+Running /tools/Xilinx/Vitis/2021.2/bin/bootgen  -image /home/hpark/equus/VITIS/app_v14_3_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+14:20:11 Build Finished (took 6s.176ms)
+

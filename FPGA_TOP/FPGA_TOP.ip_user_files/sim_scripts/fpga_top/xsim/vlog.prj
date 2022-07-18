@@ -1,0 +1,13 @@
+verilog xil_defaultlib --include "/tools/Xilinx/Vivado/2021.2/data/xilinx_vip/include" --include "../../../../FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/ec67/hdl" --include "../../../../FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/3007/hdl" \
+"../../../bd/fpga_top/ip/fpga_top_processing_system7_0_0/sim/fpga_top_processing_system7_0_0.v" \
+"../../../bd/fpga_top/ipshared/f2c4/CHECKER.v" \
+"../../../bd/fpga_top/ipshared/f2c4/LOGIC_PROC.v" \
+"../../../bd/fpga_top/ipshared/f2c4/LUT.v" \
+"../../../bd/fpga_top/ipshared/f2c4/TOGGLE.v" \
+"../../../bd/fpga_top/ipshared/f2c4/LOGIC_TOP.v" \
+"../../../bd/fpga_top/ip/fpga_top_LOGIC_TOP_0_0/sim/fpga_top_LOGIC_TOP_0_0.v" \
+"../../../bd/fpga_top/sim/fpga_top.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
