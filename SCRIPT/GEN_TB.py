@@ -3,7 +3,7 @@ import os
 
 parser = argparse.ArgumentParser(description="Folder Path")
 pwd = os.getcwd()
-parser.add_argument("-p", "--path", type=str, help="Folder Path", default="/home/hpark/equus/PATTERN/")
+parser.add_argument("-p", "--path", type=str, help="Folder Path", default="/proj/equus/PATTERN/")
 parsers = parser.parse_args()
 
 PATH = parsers.path
@@ -39,7 +39,7 @@ for FILE in FILES:
 
         # Assume once scl is on, ever
         if (PARAMHEADR):
-          P1 = "parameter PERIOD  = 30.30;\n"
+          P1 = "parameter PERIOD  = 60;\n"
           P2 = "reg   SWCLK                                = 0 ;\n"
           P3 = "initial\n"
           P4 = "begin\n"
@@ -99,8 +99,8 @@ for FILE in FILES:
                     else           : OUT.insert(0,bit)
 
                 if ((TEXT_REPO[-1][3]=='X') & (TEXT_REPO[-2][3]=='X')):
-                    #SCL_A = "    #(PERIOD*{:4}/2)    SCL_A={};\n".format(N_RPT.pop(0), OUT[2])
-                    SCL_A = "    #(PERIOD*{:4})    SCL_A={};\n".format(N_RPT.pop(0), OUT[2])
+                    SCL_A = "    #(PERIOD*{:4}/2)    SCL_A={};\n".format(N_RPT.pop(0), OUT[2])
+                    # SCL_A = "    #(PERIOD*{:4})    SCL_A={};\n".format(N_RPT.pop(0), OUT[2])
                     if (OUT[1].isdigit() or OUT[1] == "1\'bz"):
                         SDA_A = "    #(PERIOD*   0)    SDA_A={0};\n".format(OUT[1])
                     else:
@@ -110,8 +110,8 @@ for FILE in FILES:
                     else:
                         SWDIO = "    #(PERIOD*   0)    SWDIO=1\'bz;\n    if(SWDIO!=1'b{0}) begin\n        $display($stime, \" ns : exp={0}, got=%d\", SWDIO);\n    end\n".format(1 if OUT[0]=='H' else 0)
                 elif ((TEXT_REPO[-2][3]=='X') & (TEXT_REPO[-3][3]=='X')):
-                    #SCL_A = "    #(PERIOD*{:4}/2)    SCL_A={};\n".format(N_RPT.pop(0), OUT[2])
-                    SCL_A = "    #(PERIOD*{:4})    SCL_A={};\n".format(N_RPT.pop(0), OUT[2])
+                    SCL_A = "    #(PERIOD*{:4}/2)    SCL_A={};\n".format(N_RPT.pop(0), OUT[2])
+                    # SCL_A = "    #(PERIOD*{:4})    SCL_A={};\n".format(N_RPT.pop(0), OUT[2])
                     if (OUT[1].isdigit() or OUT[1] == "1\'bz"):
                         SDA_A = "    #(PERIOD*   0)    SDA_A={0};\n".format(OUT[1])
                     else:
@@ -182,8 +182,8 @@ for FILE in FILES:
                     else           : OUT.insert(0,bit)
 
                 if ((TEXT_REPO[-1][3]=='X') & (TEXT_REPO[-2][3]=='X')):
-                    #SCL_A = "    #(PERIOD*{:4}/2)    SCL_A={};\n".format(N_RPT.pop(0), OUT[2])
-                    SCL_A = "    #(PERIOD*{:4})    SCL_A={};\n".format(N_RPT.pop(0), OUT[2])
+                    SCL_A = "    #(PERIOD*{:4}/2)    SCL_A={};\n".format(N_RPT.pop(0), OUT[2])
+                    # SCL_A = "    #(PERIOD*{:4})    SCL_A={};\n".format(N_RPT.pop(0), OUT[2])
                     if (OUT[1].isdigit() or OUT[1] == "1\'bz"):
                         SDA_A = "    #(PERIOD*   0)    SDA_A={0};\n".format(OUT[1])
                     else:
@@ -193,8 +193,8 @@ for FILE in FILES:
                     else:
                         SWDIO = "    #(PERIOD*   0)    SWDIO=1\'bz;\n    if(SWDIO!=1'b{0}) begin\n        $display($stime, \" ns : exp={0}, got=%d\", SWDIO);\n    end\n".format(1 if OUT[0]=='H' else 0)
                 elif ((TEXT_REPO[-2][3]=='X') & (TEXT_REPO[-3][3]=='X')):
-                    #SCL_A = "    #(PERIOD*{:4}/2)    SCL_A={};\n".format(N_RPT.pop(0), OUT[2])
-                    SCL_A = "    #(PERIOD*{:4})    SCL_A={};\n".format(N_RPT.pop(0), OUT[2])
+                    SCL_A = "    #(PERIOD*{:4}/2)    SCL_A={};\n".format(N_RPT.pop(0), OUT[2])
+                    # SCL_A = "    #(PERIOD*{:4})    SCL_A={};\n".format(N_RPT.pop(0), OUT[2])
                     if (OUT[1].isdigit() or OUT[1] == "1\'bz"):
                         SDA_A = "    #(PERIOD*   0)    SDA_A={0};\n".format(OUT[1])
                     else:

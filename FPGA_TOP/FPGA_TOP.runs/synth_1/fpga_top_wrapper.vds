@@ -2,20 +2,20 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Mon Jul 18 16:14:52 2022
-# Process ID: 28968
-# Current directory: /home/hpark/equus/FPGA_TOP/FPGA_TOP.runs/synth_1
+# Start of session at: Thu Oct  6 19:53:58 2022
+# Process ID: 3232
+# Current directory: /proj/equus/FPGA_TOP/FPGA_TOP.runs/synth_1
 # Command line: vivado -log fpga_top_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_top_wrapper.tcl
-# Log file: /home/hpark/equus/FPGA_TOP/FPGA_TOP.runs/synth_1/fpga_top_wrapper.vds
-# Journal file: /home/hpark/equus/FPGA_TOP/FPGA_TOP.runs/synth_1/vivado.jou
-# Running On: yuumi, OS: Linux, CPU Frequency: 3518.152 MHz, CPU Physical cores: 12, Host memory: 16774 MB
+# Log file: /proj/equus/FPGA_TOP/FPGA_TOP.runs/synth_1/fpga_top_wrapper.vds
+# Journal file: /proj/equus/FPGA_TOP/FPGA_TOP.runs/synth_1/vivado.jou
+# Running On: yuumi, OS: Linux, CPU Frequency: 2194.615 MHz, CPU Physical cores: 12, Host memory: 16774 MB
 #-----------------------------------------------------------
 source fpga_top_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/hpark/equus/LOGIC_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/proj/equus/LOGIC_IP'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
-Command: read_checkpoint -auto_incremental -incremental /home/hpark/equus/FPGA_TOP/FPGA_TOP.srcs/utils_1/imports/synth_1/fpga_top_wrapper.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from /home/hpark/equus/FPGA_TOP/FPGA_TOP.srcs/utils_1/imports/synth_1/fpga_top_wrapper.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental /proj/equus/FPGA_TOP/FPGA_TOP.srcs/utils_1/imports/synth_1/fpga_top_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /proj/equus/FPGA_TOP/FPGA_TOP.srcs/utils_1/imports/synth_1/fpga_top_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top fpga_top_wrapper -part xc7z020clg484-1
 Starting synth_design
@@ -26,33 +26,33 @@ WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis b
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 29345
+INFO: [Synth 8-7075] Helper process launched with PID 3316
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2714.094 ; gain = 0.000 ; free physical = 147 ; free virtual = 27081
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2713.191 ; gain = 0.000 ; free physical = 5125 ; free virtual = 44363
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'fpga_top_wrapper' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/hdl/fpga_top_wrapper.v:12]
-INFO: [Synth 8-6157] synthesizing module 'fpga_top' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:13]
-INFO: [Synth 8-6157] synthesizing module 'fpga_top_LOGIC_TOP_0_174' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_LOGIC_TOP_0_174/synth/fpga_top_LOGIC_TOP_0_174.v:57]
-INFO: [Synth 8-6157] synthesizing module 'LOGIC_TOP' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/2185/LOGIC_TOP.v:1]
-INFO: [Synth 8-6157] synthesizing module 'LOGIC_PROC' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/2185/LOGIC_PROC.v:1]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/2185/LOGIC_PROC.v:39]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/2185/LOGIC_PROC.v:62]
-INFO: [Synth 8-6157] synthesizing module 'LUT' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/2185/LUT.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'LUT' (1#1) [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/2185/LUT.v:1]
-INFO: [Synth 8-6157] synthesizing module 'CHECKER' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/2185/CHECKER.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'CHECKER' (2#1) [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/2185/CHECKER.v:1]
-WARNING: [Synth 8-6014] Unused sequential element clk_rising_reg was removed.  [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/2185/LOGIC_PROC.v:29]
-WARNING: [Synth 8-6014] Unused sequential element NEXT_STATE_reg was removed.  [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/2185/LOGIC_PROC.v:110]
-WARNING: [Synth 8-6014] Unused sequential element NEXT_STATE_PAST_reg was removed.  [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/2185/LOGIC_PROC.v:155]
-INFO: [Synth 8-6155] done synthesizing module 'LOGIC_PROC' (3#1) [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/2185/LOGIC_PROC.v:1]
-INFO: [Synth 8-6157] synthesizing module 'TOGGLE' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/2185/TOGGLE.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'TOGGLE' (4#1) [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/2185/TOGGLE.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'LOGIC_TOP' (5#1) [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/2185/LOGIC_TOP.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'fpga_top_LOGIC_TOP_0_174' (6#1) [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_LOGIC_TOP_0_174/synth/fpga_top_LOGIC_TOP_0_174.v:57]
-WARNING: [Synth 8-7071] port 'O_FPGA_TRI' of module 'fpga_top_LOGIC_TOP_0_174' is unconnected for instance 'LOGIC_TOP_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:142]
-WARNING: [Synth 8-7071] port 'O_FPGA_VAL' of module 'fpga_top_LOGIC_TOP_0_174' is unconnected for instance 'LOGIC_TOP_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:142]
-WARNING: [Synth 8-7023] instance 'LOGIC_TOP_0' of module 'fpga_top_LOGIC_TOP_0_174' has 20 connections declared, but only 18 given [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:142]
-INFO: [Synth 8-638] synthesizing module 'fpga_top_proc_sys_reset_0_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_proc_sys_reset_0_0/synth/fpga_top_proc_sys_reset_0_0.vhd:74]
+INFO: [Synth 8-6157] synthesizing module 'fpga_top_wrapper' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/hdl/fpga_top_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'fpga_top' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:13]
+INFO: [Synth 8-6157] synthesizing module 'fpga_top_LOGIC_TOP_0_239' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_LOGIC_TOP_0_239/synth/fpga_top_LOGIC_TOP_0_239.v:57]
+INFO: [Synth 8-6157] synthesizing module 'LOGIC_TOP' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LOGIC_TOP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'LOGIC_PROC' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LOGIC_PROC.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LOGIC_PROC.v:39]
+INFO: [Synth 8-155] case statement is not full and has no default [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LOGIC_PROC.v:62]
+INFO: [Synth 8-6157] synthesizing module 'LUT' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LUT.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'LUT' (1#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LUT.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CHECKER' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/CHECKER.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CHECKER' (2#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/CHECKER.v:1]
+WARNING: [Synth 8-6014] Unused sequential element clk_rising_reg was removed.  [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LOGIC_PROC.v:29]
+WARNING: [Synth 8-6014] Unused sequential element NEXT_STATE_reg was removed.  [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LOGIC_PROC.v:110]
+WARNING: [Synth 8-6014] Unused sequential element NEXT_STATE_PAST_reg was removed.  [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LOGIC_PROC.v:155]
+INFO: [Synth 8-6155] done synthesizing module 'LOGIC_PROC' (3#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LOGIC_PROC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'TOGGLE' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/TOGGLE.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'TOGGLE' (4#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/TOGGLE.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'LOGIC_TOP' (5#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LOGIC_TOP.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_top_LOGIC_TOP_0_239' (6#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_LOGIC_TOP_0_239/synth/fpga_top_LOGIC_TOP_0_239.v:57]
+WARNING: [Synth 8-7071] port 'O_FPGA_TRI' of module 'fpga_top_LOGIC_TOP_0_239' is unconnected for instance 'LOGIC_TOP_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:142]
+WARNING: [Synth 8-7071] port 'O_FPGA_VAL' of module 'fpga_top_LOGIC_TOP_0_239' is unconnected for instance 'LOGIC_TOP_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:142]
+WARNING: [Synth 8-7023] instance 'LOGIC_TOP_0' of module 'fpga_top_LOGIC_TOP_0_239' has 20 connections declared, but only 18 given [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:142]
+INFO: [Synth 8-638] synthesizing module 'fpga_top_proc_sys_reset_0_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_proc_sys_reset_0_0/synth/fpga_top_proc_sys_reset_0_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
@@ -62,107 +62,107 @@ INFO: [Synth 8-638] synthesizing module 'fpga_top_proc_sys_reset_0_0' [/home/hpa
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_proc_sys_reset_0_0/synth/fpga_top_proc_sys_reset_0_0.vhd:129]
-INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_proc_sys_reset_0_0/synth/fpga_top_proc_sys_reset_0_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
-INFO: [Synth 8-638] synthesizing module 'lpf' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
-INFO: [Synth 8-3491] module 'SRL16' declared at '/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:105983' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:105983' bound to instance 'POR_SRL_I' of component 'SRL16' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
 INFO: [Synth 8-6157] synthesizing module 'SRL16' [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:105983]
 INFO: [Synth 8-6155] done synthesizing module 'SRL16' (7#1) [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:105983]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (8#1) [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'lpf' (9#1) [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
-INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
-INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (10#1) [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
-INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (11#1) [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (12#1) [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
-INFO: [Synth 8-256] done synthesizing module 'fpga_top_proc_sys_reset_0_0' (13#1) [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_proc_sys_reset_0_0/synth/fpga_top_proc_sys_reset_0_0.vhd:74]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'fpga_top_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:161]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'fpga_top_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:161]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'fpga_top_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:161]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'fpga_top_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:161]
-WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'fpga_top_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:161]
-INFO: [Synth 8-6157] synthesizing module 'fpga_top_processing_system7_0_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:60]
-INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:162]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (8#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (9#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (10#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (11#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (12#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'fpga_top_proc_sys_reset_0_0' (13#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_proc_sys_reset_0_0/synth/fpga_top_proc_sys_reset_0_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'fpga_top_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:161]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'fpga_top_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:161]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'fpga_top_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:161]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'fpga_top_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:161]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'fpga_top_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:161]
+INFO: [Synth 8-6157] synthesizing module 'fpga_top_processing_system7_0_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:162]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1083]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (14#1) [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1083]
 INFO: [Synth 8-6157] synthesizing module 'BIBUF' [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:730]
 INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (15#1) [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:730]
 INFO: [Synth 8-6157] synthesizing module 'PS7' [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:89905]
 INFO: [Synth 8-6155] done synthesizing module 'PS7' (16#1) [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:89905]
-INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (17#1) [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:162]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
-WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
-WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
-WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
-WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
-WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
-WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
-WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
-WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
-WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
-WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
-WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
-WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
-INFO: [Synth 8-6155] done synthesizing module 'fpga_top_processing_system7_0_0' (18#1) [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:60]
-WARNING: [Synth 8-7071] port 'TTC0_WAVE0_OUT' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'TTC0_WAVE1_OUT' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'TTC0_WAVE2_OUT' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARVALID' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWVALID' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_BREADY' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_RREADY' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_WLAST' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_WVALID' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARID' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWID' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_WID' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARBURST' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARLOCK' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARSIZE' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWBURST' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWLOCK' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWSIZE' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARPROT' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWPROT' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARADDR' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWADDR' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_WDATA' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARCACHE' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARLEN' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARQOS' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWCACHE' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWLEN' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWQOS' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_WSTRB' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'fpga_top_processing_system7_0_0' has 68 connections declared, but only 36 given [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
-INFO: [Synth 8-6155] done synthesizing module 'fpga_top' (19#1) [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'fpga_top_wrapper' (20#1) [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/hdl/fpga_top_wrapper.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (17#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:162]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
+WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:329]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_top_processing_system7_0_0' (18#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/synth/fpga_top_processing_system7_0_0.v:60]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE0_OUT' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE1_OUT' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE2_OUT' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARVALID' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWVALID' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_BREADY' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_RREADY' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_WLAST' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_WVALID' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARID' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWID' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_WID' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARBURST' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARLOCK' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARSIZE' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWBURST' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWLOCK' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWSIZE' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARPROT' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWPROT' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARADDR' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWADDR' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_WDATA' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARCACHE' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARLEN' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARQOS' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWCACHE' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWLEN' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWQOS' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_WSTRB' of module 'fpga_top_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'fpga_top_processing_system7_0_0' has 68 connections declared, but only 36 given [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:168]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_top' (19#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_top_wrapper' (20#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/hdl/fpga_top_wrapper.v:12]
 WARNING: [Synth 8-7129] Port ENET0_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ENET0_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ENET0_GMII_RX_DV in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
@@ -249,75 +249,75 @@ WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module cdc_sync is either uncon
 WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync is either unconnected or has no load
 WARNING: [Synth 8-7129] Port I_WIRE_RSTN in module TOGGLE is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2714.094 ; gain = 0.000 ; free physical = 1227 ; free virtual = 27913
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2713.191 ; gain = 0.000 ; free physical = 6050 ; free virtual = 45288
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2714.094 ; gain = 0.000 ; free physical = 1261 ; free virtual = 27959
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2713.191 ; gain = 0.000 ; free physical = 6099 ; free virtual = 45338
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2714.094 ; gain = 0.000 ; free physical = 1261 ; free virtual = 27959
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2713.191 ; gain = 0.000 ; free physical = 6099 ; free virtual = 45338
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2714.094 ; gain = 0.000 ; free physical = 1255 ; free virtual = 27954
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2713.191 ; gain = 0.000 ; free physical = 6094 ; free virtual = 45333
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/fpga_top_processing_system7_0_0.xdc] for cell 'fpga_top_i/processing_system7_0/inst'
-Finished Parsing XDC File [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/fpga_top_processing_system7_0_0.xdc] for cell 'fpga_top_i/processing_system7_0/inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/fpga_top_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_top_wrapper_propImpl.xdc].
+Parsing XDC File [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/fpga_top_processing_system7_0_0.xdc] for cell 'fpga_top_i/processing_system7_0/inst'
+Finished Parsing XDC File [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/fpga_top_processing_system7_0_0.xdc] for cell 'fpga_top_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/fpga_top_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_top_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/fpga_top_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_proc_sys_reset_0_0/fpga_top_proc_sys_reset_0_0_board.xdc] for cell 'fpga_top_i/proc_sys_reset_0/U0'
-Finished Parsing XDC File [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_proc_sys_reset_0_0/fpga_top_proc_sys_reset_0_0_board.xdc] for cell 'fpga_top_i/proc_sys_reset_0/U0'
-Parsing XDC File [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_proc_sys_reset_0_0/fpga_top_proc_sys_reset_0_0.xdc] for cell 'fpga_top_i/proc_sys_reset_0/U0'
-Finished Parsing XDC File [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_proc_sys_reset_0_0/fpga_top_proc_sys_reset_0_0.xdc] for cell 'fpga_top_i/proc_sys_reset_0/U0'
-Parsing XDC File [/home/hpark/equus/FPGA_TOP/FPGA_TOP.srcs/constrs_1/imports/new/ZSK.xdc]
-Finished Parsing XDC File [/home/hpark/equus/FPGA_TOP/FPGA_TOP.srcs/constrs_1/imports/new/ZSK.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/hpark/equus/FPGA_TOP/FPGA_TOP.srcs/constrs_1/imports/new/ZSK.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_top_wrapper_propImpl.xdc].
+Parsing XDC File [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_proc_sys_reset_0_0/fpga_top_proc_sys_reset_0_0_board.xdc] for cell 'fpga_top_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_proc_sys_reset_0_0/fpga_top_proc_sys_reset_0_0_board.xdc] for cell 'fpga_top_i/proc_sys_reset_0/U0'
+Parsing XDC File [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_proc_sys_reset_0_0/fpga_top_proc_sys_reset_0_0.xdc] for cell 'fpga_top_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_proc_sys_reset_0_0/fpga_top_proc_sys_reset_0_0.xdc] for cell 'fpga_top_i/proc_sys_reset_0/U0'
+Parsing XDC File [/proj/equus/FPGA_TOP/FPGA_TOP.srcs/constrs_1/imports/new/ZSK.xdc]
+Finished Parsing XDC File [/proj/equus/FPGA_TOP/FPGA_TOP.srcs/constrs_1/imports/new/ZSK.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/proj/equus/FPGA_TOP/FPGA_TOP.srcs/constrs_1/imports/new/ZSK.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_top_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/fpga_top_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/hpark/equus/FPGA_TOP/FPGA_TOP.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/hpark/equus/FPGA_TOP/FPGA_TOP.runs/synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/hpark/equus/FPGA_TOP/FPGA_TOP.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_top_wrapper_propImpl.xdc].
+Parsing XDC File [/proj/equus/FPGA_TOP/FPGA_TOP.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/proj/equus/FPGA_TOP/FPGA_TOP.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/proj/equus/FPGA_TOP/FPGA_TOP.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_top_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/fpga_top_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2778.016 ; gain = 0.000 ; free physical = 1141 ; free virtual = 27864
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2777.113 ; gain = 0.000 ; free physical = 6005 ; free virtual = 45244
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 13 instances were transformed.
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2778.016 ; gain = 0.000 ; free physical = 1141 ; free virtual = 27864
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2777.113 ; gain = 0.000 ; free physical = 6005 ; free virtual = 45244
 WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2778.016 ; gain = 63.922 ; free physical = 1179 ; free virtual = 27943
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2777.113 ; gain = 63.922 ; free physical = 6083 ; free virtual = 45322
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2778.016 ; gain = 63.922 ; free physical = 1179 ; free virtual = 27943
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2777.113 ; gain = 63.922 ; free physical = 6083 ; free virtual = 45322
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for fpga_top_i/processing_system7_0/inst. (constraint file  /home/hpark/equus/FPGA_TOP/FPGA_TOP.runs/synth_1/dont_touch.xdc, line 19).
-Applied set_property KEEP_HIERARCHY = SOFT for fpga_top_i/proc_sys_reset_0/U0. (constraint file  /home/hpark/equus/FPGA_TOP/FPGA_TOP.runs/synth_1/dont_touch.xdc, line 22).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_top_i/processing_system7_0/inst. (constraint file  /proj/equus/FPGA_TOP/FPGA_TOP.runs/synth_1/dont_touch.xdc, line 19).
+Applied set_property KEEP_HIERARCHY = SOFT for fpga_top_i/proc_sys_reset_0/U0. (constraint file  /proj/equus/FPGA_TOP/FPGA_TOP.runs/synth_1/dont_touch.xdc, line 22).
 Applied set_property KEEP_HIERARCHY = SOFT for fpga_top_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for fpga_top_i/processing_system7_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for fpga_top_i/proc_sys_reset_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for fpga_top_i/LOGIC_TOP_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2778.016 ; gain = 63.922 ; free physical = 1177 ; free virtual = 27944
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2777.113 ; gain = 63.922 ; free physical = 6083 ; free virtual = 45322
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2778.016 ; gain = 63.922 ; free physical = 1150 ; free virtual = 27930
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2777.113 ; gain = 63.922 ; free physical = 6073 ; free virtual = 45313
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -332,7 +332,6 @@ Detailed RTL Component Info :
 	                3 Bit    Registers := 3     
 	                1 Bit    Registers := 12    
 +---Muxes : 
-	 753 Input   40 Bit        Muxes := 2     
 	   2 Input   40 Bit        Muxes := 2     
 	   2 Input    6 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 4     
@@ -382,7 +381,7 @@ WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused a
 WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2778.016 ; gain = 63.922 ; free physical = 1098 ; free virtual = 27923
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2777.113 ; gain = 63.922 ; free physical = 6047 ; free virtual = 45292
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -392,8 +391,9 @@ ROM: Preliminary Mapping Report
 +-------------------------+--------------------------------+---------------+----------------+
 |Module Name              | RTL Object                     | Depth x Width | Implemented As | 
 +-------------------------+--------------------------------+---------------+----------------+
-|fpga_top_LOGIC_TOP_0_174 | inst/u_LOGIC_PROC/u_LUT_2/dout | 1024x40       | LUT            | 
-|fpga_top_LOGIC_TOP_0_174 | inst/u_LOGIC_PROC/u_LUT_1/dout | 1024x40       | LUT            | 
+|LUT                      | dout                           | 2048x27       | LUT            | 
+|fpga_top_LOGIC_TOP_0_239 | inst/u_LOGIC_PROC/u_LUT_2/dout | 2048x27       | LUT            | 
+|fpga_top_LOGIC_TOP_0_239 | inst/u_LOGIC_PROC/u_LUT_1/dout | 2048x27       | LUT            | 
 +-------------------------+--------------------------------+---------------+----------------+
 
 ---------------------------------------------------------------------------------
@@ -403,19 +403,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2791.000 ; gain = 76.906 ; free physical = 770 ; free virtual = 27652
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2793.098 ; gain = 79.906 ; free physical = 5777 ; free virtual = 45021
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2826.023 ; gain = 111.930 ; free physical = 750 ; free virtual = 27633
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2826.121 ; gain = 112.930 ; free physical = 5762 ; free virtual = 45007
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2837.047 ; gain = 122.953 ; free physical = 751 ; free virtual = 27634
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2836.137 ; gain = 122.945 ; free physical = 5761 ; free virtual = 45005
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -432,42 +432,42 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-5744] Inout buffer is not created at top module fpga_top_wrapper for the pin O_FPGA_PIN_0_0, other connections may not have buffer connection [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/hdl/fpga_top_wrapper.v:12]
-CRITICAL WARNING: [Synth 8-5744] Inout buffer is not created at top module fpga_top_wrapper for the pin O_FPGA_PIN_1_0, other connections may not have buffer connection [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/hdl/fpga_top_wrapper.v:12]
-CRITICAL WARNING: [Synth 8-5744] Inout buffer is not created at top module fpga_top_wrapper for the pin O_FPGA_PIN_2_0, other connections may not have buffer connection [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/hdl/fpga_top_wrapper.v:12]
-CRITICAL WARNING: [Synth 8-5744] Inout buffer is not created at top module fpga_top_wrapper for the pin O_FPGA_PIN_3_0, other connections may not have buffer connection [/home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/hdl/fpga_top_wrapper.v:12]
+CRITICAL WARNING: [Synth 8-5744] Inout buffer is not created at top module fpga_top_wrapper for the pin O_FPGA_PIN_0_0, other connections may not have buffer connection [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/hdl/fpga_top_wrapper.v:12]
+CRITICAL WARNING: [Synth 8-5744] Inout buffer is not created at top module fpga_top_wrapper for the pin O_FPGA_PIN_1_0, other connections may not have buffer connection [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/hdl/fpga_top_wrapper.v:12]
+CRITICAL WARNING: [Synth 8-5744] Inout buffer is not created at top module fpga_top_wrapper for the pin O_FPGA_PIN_2_0, other connections may not have buffer connection [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/hdl/fpga_top_wrapper.v:12]
+CRITICAL WARNING: [Synth 8-5744] Inout buffer is not created at top module fpga_top_wrapper for the pin O_FPGA_PIN_3_0, other connections may not have buffer connection [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/hdl/fpga_top_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2837.047 ; gain = 122.953 ; free physical = 740 ; free virtual = 27639
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.137 ; gain = 122.945 ; free physical = 5761 ; free virtual = 45006
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2837.047 ; gain = 122.953 ; free physical = 740 ; free virtual = 27639
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.137 ; gain = 122.945 ; free physical = 5761 ; free virtual = 45006
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2837.047 ; gain = 122.953 ; free physical = 740 ; free virtual = 27639
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.137 ; gain = 122.945 ; free physical = 5761 ; free virtual = 45006
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2837.047 ; gain = 122.953 ; free physical = 740 ; free virtual = 27639
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.137 ; gain = 122.945 ; free physical = 5761 ; free virtual = 45006
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2837.047 ; gain = 122.953 ; free physical = 740 ; free virtual = 27639
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.137 ; gain = 122.945 ; free physical = 5761 ; free virtual = 45006
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2837.047 ; gain = 122.953 ; free physical = 740 ; free virtual = 27639
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.137 ; gain = 122.945 ; free physical = 5761 ; free virtual = 45006
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -487,16 +487,16 @@ Report Cell Usage:
 |2     |BUFG   |     1|
 |3     |CARRY4 |    32|
 |4     |LUT1   |    37|
-|5     |LUT2   |    73|
-|6     |LUT3   |    19|
-|7     |LUT4   |    26|
-|8     |LUT5   |    64|
-|9     |LUT6   |   257|
-|10    |MUXF7  |    52|
-|11    |MUXF8  |    22|
+|5     |LUT2   |    27|
+|6     |LUT3   |    33|
+|7     |LUT4   |    46|
+|8     |LUT5   |    99|
+|9     |LUT6   |   456|
+|10    |MUXF7  |   107|
+|11    |MUXF8  |    25|
 |12    |PS7    |     1|
 |13    |SRL16  |     1|
-|14    |FDCE   |   107|
+|14    |FDCE   |   109|
 |15    |FDPE   |     3|
 |16    |FDR    |     4|
 |17    |FDRE   |    23|
@@ -505,30 +505,30 @@ Report Cell Usage:
 |20    |OBUF   |    15|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2837.047 ; gain = 122.953 ; free physical = 740 ; free virtual = 27639
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.137 ; gain = 122.945 ; free physical = 5761 ; free virtual = 45006
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 4 critical warnings and 92 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2837.047 ; gain = 59.031 ; free physical = 791 ; free virtual = 27691
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2837.055 ; gain = 122.953 ; free physical = 791 ; free virtual = 27691
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2836.137 ; gain = 59.023 ; free physical = 5814 ; free virtual = 45059
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.145 ; gain = 122.945 ; free physical = 5814 ; free virtual = 45059
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2837.055 ; gain = 0.000 ; free physical = 880 ; free virtual = 27780
-INFO: [Netlist 29-17] Analyzing 115 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2836.145 ; gain = 0.000 ; free physical = 5906 ; free virtual = 45151
+INFO: [Netlist 29-17] Analyzing 173 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2882.938 ; gain = 0.000 ; free physical = 807 ; free virtual = 27712
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2882.027 ; gain = 0.000 ; free physical = 5839 ; free virtual = 45084
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 9 instances were transformed.
   FDR => FDRE: 4 instances
   IOBUF => IOBUF (IBUF, OBUFT): 4 instances
   SRL16 => SRL16E: 1 instance 
 
-Synth Design complete, checksum: bfebc50b
+Synth Design complete, checksum: 607450db
 INFO: [Common 17-83] Releasing license: Synthesis
 82 Infos, 173 Warnings, 4 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 2882.938 ; gain = 168.953 ; free physical = 1160 ; free virtual = 28067
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:29 . Memory (MB): peak = 2882.027 ; gain = 168.945 ; free physical = 6191 ; free virtual = 45435
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-INFO: [Common 17-1381] The checkpoint '/home/hpark/equus/FPGA_TOP/FPGA_TOP.runs/synth_1/fpga_top_wrapper.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/proj/equus/FPGA_TOP/FPGA_TOP.runs/synth_1/fpga_top_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file fpga_top_wrapper_utilization_synth.rpt -pb fpga_top_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Jul 18 16:15:35 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  6 19:54:36 2022...

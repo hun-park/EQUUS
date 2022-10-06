@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/hpark/equus/FPGA_TOP/FPGA_TOP.runs/synth_1'
+HD_PWD='/proj/equus/FPGA_TOP/FPGA_TOP.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

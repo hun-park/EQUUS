@@ -12,16 +12,16 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fpga_top_pr
 # IP: bd/fpga_top/ip/fpga_top_proc_sys_reset_0_0/fpga_top_proc_sys_reset_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fpga_top_proc_sys_reset_0_0 || ORIG_REF_NAME==fpga_top_proc_sys_reset_0_0} -quiet] -quiet
 
-# IP: bd/fpga_top/ip/fpga_top_LOGIC_TOP_0_174/fpga_top_LOGIC_TOP_0_174.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fpga_top_LOGIC_TOP_0_174 || ORIG_REF_NAME==fpga_top_LOGIC_TOP_0_174} -quiet] -quiet
+# IP: bd/fpga_top/ip/fpga_top_LOGIC_TOP_0_239/fpga_top_LOGIC_TOP_0_239.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fpga_top_LOGIC_TOP_0_239 || ORIG_REF_NAME==fpga_top_LOGIC_TOP_0_239} -quiet] -quiet
 
-# XDC: /home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/fpga_top_processing_system7_0_0.xdc
+# XDC: /proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_processing_system7_0_0/fpga_top_processing_system7_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==fpga_top_processing_system7_0_0 || ORIG_REF_NAME==fpga_top_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: /home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_proc_sys_reset_0_0/fpga_top_proc_sys_reset_0_0_board.xdc
+# XDC: /proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_proc_sys_reset_0_0/fpga_top_proc_sys_reset_0_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==fpga_top_proc_sys_reset_0_0 || ORIG_REF_NAME==fpga_top_proc_sys_reset_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: /home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_proc_sys_reset_0_0/fpga_top_proc_sys_reset_0_0.xdc
+# XDC: /proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_proc_sys_reset_0_0/fpga_top_proc_sys_reset_0_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==fpga_top_proc_sys_reset_0_0 || ORIG_REF_NAME==fpga_top_proc_sys_reset_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: /home/hpark/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/fpga_top_ooc.xdc
+# XDC: /proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/fpga_top_ooc.xdc

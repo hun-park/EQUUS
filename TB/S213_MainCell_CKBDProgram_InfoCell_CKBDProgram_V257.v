@@ -29,12 +29,12 @@
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
     if(SWDIO!=1'b1) begin
@@ -108,12 +108,12 @@
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
     if(SWDIO!=1'b1) begin
@@ -182,12 +182,12 @@
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
     if(SWDIO!=1'b1) begin
@@ -241,12 +241,12 @@
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
     if(SWDIO!=1'b1) begin
@@ -350,12 +350,12 @@
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
     if(SWDIO!=1'b1) begin
@@ -678,12 +678,12 @@
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
     if(SWDIO!=1'b1) begin
@@ -757,12 +757,12 @@
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
     if(SWDIO!=1'b1) begin
@@ -831,12 +831,12 @@
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
     if(SWDIO!=1'b1) begin
@@ -900,12 +900,12 @@
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
     if(SWDIO!=1'b1) begin
@@ -969,12 +969,12 @@
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
     if(SWDIO!=1'b1) begin
@@ -1553,12 +1553,12 @@
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
     if(SWDIO!=1'b1) begin
@@ -1881,12 +1881,12 @@
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
 
 
-    #(PERIOD*   1)    SCL_A=1;
+    #(PERIOD*   1/2)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=1'bz;
     if(SWDIO!=1'b1) begin

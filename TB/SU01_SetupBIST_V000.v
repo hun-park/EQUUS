@@ -1,4 +1,4 @@
-parameter PERIOD  = 30.30;
+parameter PERIOD  = 60;
 reg   SWCLK                                = 0 ;
 
 
@@ -40,12 +40,7 @@ begin
     #(PERIOD*   0)    SWDIO=0;
 
 
-    #(PERIOD*  48)    SCL_A=0;
-    #(PERIOD*   0)    SDA_A=0;
-    #(PERIOD*   0)    SWDIO=0;
-
-
-    #(PERIOD*  48)    SCL_A=1;
+    #(PERIOD*  96)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=0;
     #(PERIOD*   0)    SWDIO=0;
 
@@ -55,12 +50,7 @@ begin
     #(PERIOD*   0)    SWDIO=0;
 
 
-    #(PERIOD*  48)    SCL_A=0;
-    #(PERIOD*   0)    SDA_A=0;
-    #(PERIOD*   0)    SWDIO=0;
-
-
-    #(PERIOD*  48)    SCL_A=1;
+    #(PERIOD*  96)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=0;
     #(PERIOD*   0)    SWDIO=0;
 
@@ -70,12 +60,7 @@ begin
     #(PERIOD*   0)    SWDIO=0;
 
 
-    #(PERIOD*  48)    SCL_A=0;
-    #(PERIOD*   0)    SDA_A=0;
-    #(PERIOD*   0)    SWDIO=0;
-
-
-    #(PERIOD*  48)    SCL_A=1;
+    #(PERIOD*  96)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=0;
     #(PERIOD*   0)    SWDIO=0;
 
@@ -85,12 +70,7 @@ begin
     #(PERIOD*   0)    SWDIO=0;
 
 
-    #(PERIOD*  48)    SCL_A=0;
-    #(PERIOD*   0)    SDA_A=0;
-    #(PERIOD*   0)    SWDIO=0;
-
-
-    #(PERIOD*  48)    SCL_A=1;
+    #(PERIOD*  96)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=0;
     #(PERIOD*   0)    SWDIO=0;
 
@@ -100,12 +80,7 @@ begin
     #(PERIOD*   0)    SWDIO=0;
 
 
-    #(PERIOD*  48)    SCL_A=0;
-    #(PERIOD*   0)    SDA_A=1;
-    #(PERIOD*   0)    SWDIO=0;
-
-
-    #(PERIOD*  48)    SCL_A=1;
+    #(PERIOD*  96)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=0;
 
@@ -115,12 +90,7 @@ begin
     #(PERIOD*   0)    SWDIO=0;
 
 
-    #(PERIOD*  48)    SCL_A=0;
-    #(PERIOD*   0)    SDA_A=0;
-    #(PERIOD*   0)    SWDIO=0;
-
-
-    #(PERIOD*  48)    SCL_A=1;
+    #(PERIOD*  96)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=0;
     #(PERIOD*   0)    SWDIO=0;
 
@@ -130,12 +100,7 @@ begin
     #(PERIOD*   0)    SWDIO=0;
 
 
-    #(PERIOD*  48)    SCL_A=0;
-    #(PERIOD*   0)    SDA_A=1;
-    #(PERIOD*   0)    SWDIO=0;
-
-
-    #(PERIOD*  48)    SCL_A=1;
+    #(PERIOD*  96)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=0;
 
@@ -145,18 +110,13 @@ begin
     #(PERIOD*   0)    SWDIO=0;
 
 
-    #(PERIOD*  48)    SCL_A=0;
-    #(PERIOD*   0)    SDA_A=0;
-    #(PERIOD*   0)    SWDIO=0;
-
-
-    #(PERIOD*  48)    SCL_A=1;
+    #(PERIOD*  96)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=0;
     #(PERIOD*   0)    SWDIO=0;
 
 
     #(PERIOD*  64)    SCL_A=0;
-    #(PERIOD*   0)    SDA_A=1'bz;
+    #(PERIOD*   0)    SDA_A=0;
     #(PERIOD*   0)    SWDIO=0;
 
 
@@ -179,16 +139,11 @@ begin
 
 
     #(PERIOD*  63)    SCL_A=0;
-    #(PERIOD*   0)    SDA_A=1;
+    #(PERIOD*   0)    SDA_A=0;
     #(PERIOD*   0)    SWDIO=0;
 
 
-    #(PERIOD*  48)    SCL_A=0;
-    #(PERIOD*   0)    SDA_A=1;
-    #(PERIOD*   0)    SWDIO=0;
-
-
-    #(PERIOD*  48)    SCL_A=1;
+    #(PERIOD*  96)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=0;
 
@@ -198,12 +153,7 @@ begin
     #(PERIOD*   0)    SWDIO=0;
 
 
-    #(PERIOD*  48)    SCL_A=0;
-    #(PERIOD*   0)    SDA_A=0;
-    #(PERIOD*   0)    SWDIO=0;
-
-
-    #(PERIOD*  48)    SCL_A=1;
+    #(PERIOD*  96)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=0;
     #(PERIOD*   0)    SWDIO=0;
 
@@ -213,12 +163,7 @@ begin
     #(PERIOD*   0)    SWDIO=0;
 
 
-    #(PERIOD*  48)    SCL_A=0;
-    #(PERIOD*   0)    SDA_A=0;
-    #(PERIOD*   0)    SWDIO=0;
-
-
-    #(PERIOD*  48)    SCL_A=1;
+    #(PERIOD*  96)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=0;
     #(PERIOD*   0)    SWDIO=0;
 
@@ -228,12 +173,7 @@ begin
     #(PERIOD*   0)    SWDIO=0;
 
 
-    #(PERIOD*  48)    SCL_A=0;
-    #(PERIOD*   0)    SDA_A=0;
-    #(PERIOD*   0)    SWDIO=0;
-
-
-    #(PERIOD*  48)    SCL_A=1;
+    #(PERIOD*  96)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=0;
     #(PERIOD*   0)    SWDIO=0;
 
@@ -243,12 +183,7 @@ begin
     #(PERIOD*   0)    SWDIO=0;
 
 
-    #(PERIOD*  48)    SCL_A=0;
-    #(PERIOD*   0)    SDA_A=0;
-    #(PERIOD*   0)    SWDIO=0;
-
-
-    #(PERIOD*  48)    SCL_A=1;
+    #(PERIOD*  96)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=0;
     #(PERIOD*   0)    SWDIO=0;
 
@@ -258,12 +193,7 @@ begin
     #(PERIOD*   0)    SWDIO=0;
 
 
-    #(PERIOD*  48)    SCL_A=0;
-    #(PERIOD*   0)    SDA_A=0;
-    #(PERIOD*   0)    SWDIO=0;
-
-
-    #(PERIOD*  48)    SCL_A=1;
+    #(PERIOD*  96)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=0;
     #(PERIOD*   0)    SWDIO=0;
 
@@ -273,12 +203,7 @@ begin
     #(PERIOD*   0)    SWDIO=0;
 
 
-    #(PERIOD*  48)    SCL_A=0;
-    #(PERIOD*   0)    SDA_A=1;
-    #(PERIOD*   0)    SWDIO=0;
-
-
-    #(PERIOD*  48)    SCL_A=1;
+    #(PERIOD*  96)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=1;
     #(PERIOD*   0)    SWDIO=0;
 
@@ -288,18 +213,13 @@ begin
     #(PERIOD*   0)    SWDIO=0;
 
 
-    #(PERIOD*  48)    SCL_A=0;
-    #(PERIOD*   0)    SDA_A=0;
-    #(PERIOD*   0)    SWDIO=0;
-
-
-    #(PERIOD*  48)    SCL_A=1;
+    #(PERIOD*  96)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=0;
     #(PERIOD*   0)    SWDIO=0;
 
 
     #(PERIOD*  64)    SCL_A=0;
-    #(PERIOD*   0)    SDA_A=1'bz;
+    #(PERIOD*   0)    SDA_A=0;
     #(PERIOD*   0)    SWDIO=0;
 
 
@@ -322,16 +242,11 @@ begin
 
 
     #(PERIOD*  63)    SCL_A=0;
-    #(PERIOD*   0)    SDA_A=1;
-    #(PERIOD*   0)    SWDIO=0;
-
-
-    #(PERIOD*  48)    SCL_A=0;
     #(PERIOD*   0)    SDA_A=0;
     #(PERIOD*   0)    SWDIO=0;
 
 
-    #(PERIOD*  48)    SCL_A=1;
+    #(PERIOD*  96)    SCL_A=1;
     #(PERIOD*   0)    SDA_A=0;
     #(PERIOD*   0)    SWDIO=0;
 

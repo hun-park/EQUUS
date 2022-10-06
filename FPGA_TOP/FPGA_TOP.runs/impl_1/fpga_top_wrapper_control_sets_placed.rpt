@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
-| Date         : Mon Jul 18 16:16:09 2022
+| Date         : Thu Oct  6 19:55:10 2022
 | Host         : yuumi running 64-bit Ubuntu 18.04.6 LTS
 | Command      : report_control_sets -verbose -file fpga_top_wrapper_control_sets_placed.rpt
 | Design       : fpga_top_wrapper
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |    10 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    25 |
+| Unused register locations in slices containing registers |    23 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -58,31 +58,31 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              22 |            7 |
+| No           | No                    | No                     |              22 |            8 |
 | No           | No                    | Yes                    |               2 |            2 |
-| No           | Yes                   | No                     |               5 |            3 |
+| No           | Yes                   | No                     |               5 |            2 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |             108 |           29 |
-| Yes          | Yes                   | No                     |               6 |            2 |
+| Yes          | No                    | Yes                    |             110 |           29 |
+| Yes          | Yes                   | No                     |               6 |            1 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+-------------------------------------------------+------------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+--------------+
-|                   Clock Signal                  |                     Enable Signal                    |                          Set/Reset Signal                         | Slice Load Count | Bel Load Count | Bels / Slice |
-+-------------------------------------------------+------------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+--------------+
-|  fpga_top_i/processing_system7_0/inst/FCLK_CLK0 |                                                      | fpga_top_i/LOGIC_TOP_0/inst/u_LOGIC_PROC/u_CHECKER/O_FPGA_OUT     |                1 |              1 |         1.00 |
-|  fpga_top_i/processing_system7_0/inst/FCLK_CLK0 |                                                      | fpga_top_i/LOGIC_TOP_0/inst/u_LOGIC_PROC/ADDR_PAST_rep[9]_i_3_n_0 |                2 |              2 |         1.00 |
-|  fpga_top_i/processing_system7_0/inst/FCLK_CLK0 |                                                      | fpga_top_i/proc_sys_reset_0/U0/EXT_LPF/lpf_int                    |                2 |              4 |         2.00 |
-|  fpga_top_i/processing_system7_0/inst/FCLK_CLK0 | fpga_top_i/proc_sys_reset_0/U0/SEQ/seq_cnt_en        | fpga_top_i/proc_sys_reset_0/U0/SEQ/SEQ_COUNTER/clear              |                2 |              6 |         3.00 |
-| ~fpga_top_i/processing_system7_0/inst/FCLK_CLK0 |                                                      |                                                                   |                2 |              6 |         3.00 |
-|  fpga_top_i/processing_system7_0/inst/FCLK_CLK0 |                                                      |                                                                   |                6 |             17 |         2.83 |
-|  fpga_top_i/processing_system7_0/inst/FCLK_CLK0 | fpga_top_i/LOGIC_TOP_0/inst/u_LOGIC_PROC/RPT_PAST    | fpga_top_i/LOGIC_TOP_0/inst/u_LOGIC_PROC/ADDR_PAST_rep[9]_i_3_n_0 |                6 |             24 |         4.00 |
-|  fpga_top_i/processing_system7_0/inst/FCLK_CLK0 | fpga_top_i/LOGIC_TOP_0/inst/u_LOGIC_PROC/RPT_RES     | fpga_top_i/LOGIC_TOP_0/inst/u_LOGIC_PROC/ADDR_PAST_rep[9]_i_3_n_0 |                6 |             24 |         4.00 |
-|  fpga_top_i/processing_system7_0/inst/FCLK_CLK0 | fpga_top_i/LOGIC_TOP_0/inst/u_LOGIC_PROC/ADDR_1      | fpga_top_i/LOGIC_TOP_0/inst/u_LOGIC_PROC/ADDR_PAST_rep[9]_i_3_n_0 |                8 |             30 |         3.75 |
-|  fpga_top_i/processing_system7_0/inst/FCLK_CLK0 | fpga_top_i/LOGIC_TOP_0/inst/u_LOGIC_PROC/ADDR_PAST_0 | fpga_top_i/LOGIC_TOP_0/inst/u_LOGIC_PROC/ADDR_PAST_rep[9]_i_3_n_0 |                9 |             30 |         3.33 |
-+-------------------------------------------------+------------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+--------------+
++-------------------------------------------------+------------------------------------------------------+--------------------------------------------------------------------+------------------+----------------+--------------+
+|                   Clock Signal                  |                     Enable Signal                    |                          Set/Reset Signal                          | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------------------+------------------------------------------------------+--------------------------------------------------------------------+------------------+----------------+--------------+
+|  fpga_top_i/processing_system7_0/inst/FCLK_CLK0 |                                                      | fpga_top_i/LOGIC_TOP_0/inst/u_LOGIC_PROC/u_CHECKER/O_FPGA_OUT      |                1 |              1 |         1.00 |
+|  fpga_top_i/processing_system7_0/inst/FCLK_CLK0 |                                                      | fpga_top_i/LOGIC_TOP_0/inst/u_LOGIC_PROC/ADDR_PAST_rep[10]_i_3_n_0 |                2 |              2 |         1.00 |
+|  fpga_top_i/processing_system7_0/inst/FCLK_CLK0 |                                                      | fpga_top_i/proc_sys_reset_0/U0/EXT_LPF/lpf_int                     |                1 |              4 |         4.00 |
+|  fpga_top_i/processing_system7_0/inst/FCLK_CLK0 | fpga_top_i/proc_sys_reset_0/U0/SEQ/seq_cnt_en        | fpga_top_i/proc_sys_reset_0/U0/SEQ/SEQ_COUNTER/clear               |                1 |              6 |         6.00 |
+| ~fpga_top_i/processing_system7_0/inst/FCLK_CLK0 |                                                      |                                                                    |                3 |              6 |         2.00 |
+|  fpga_top_i/processing_system7_0/inst/FCLK_CLK0 |                                                      |                                                                    |                6 |             17 |         2.83 |
+|  fpga_top_i/processing_system7_0/inst/FCLK_CLK0 | fpga_top_i/LOGIC_TOP_0/inst/u_LOGIC_PROC/RPT_RES     | fpga_top_i/LOGIC_TOP_0/inst/u_LOGIC_PROC/ADDR_PAST_rep[10]_i_3_n_0 |                6 |             24 |         4.00 |
+|  fpga_top_i/processing_system7_0/inst/FCLK_CLK0 | fpga_top_i/LOGIC_TOP_0/inst/u_LOGIC_PROC/RPT_PAST    | fpga_top_i/LOGIC_TOP_0/inst/u_LOGIC_PROC/ADDR_PAST_rep[10]_i_3_n_0 |                6 |             24 |         4.00 |
+|  fpga_top_i/processing_system7_0/inst/FCLK_CLK0 | fpga_top_i/LOGIC_TOP_0/inst/u_LOGIC_PROC/ADDR_PAST_0 | fpga_top_i/LOGIC_TOP_0/inst/u_LOGIC_PROC/ADDR_PAST_rep[10]_i_3_n_0 |                9 |             31 |         3.44 |
+|  fpga_top_i/processing_system7_0/inst/FCLK_CLK0 | fpga_top_i/LOGIC_TOP_0/inst/u_LOGIC_PROC/ADDR_1      | fpga_top_i/LOGIC_TOP_0/inst/u_LOGIC_PROC/ADDR_PAST_rep[10]_i_3_n_0 |                8 |             31 |         3.88 |
++-------------------------------------------------+------------------------------------------------------+--------------------------------------------------------------------+------------------+----------------+--------------+
 
 

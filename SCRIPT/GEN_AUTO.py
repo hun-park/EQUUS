@@ -3,7 +3,7 @@ import os
 
 parser = argparse.ArgumentParser(description="Folder Path")
 pwd = os.getcwd()
-parser.add_argument("-p", "--path", type=str, help="Folder Path", default="/home/hpark/equus/CPTEST/")
+parser.add_argument("-p", "--path", type=str, help="Folder Path", default="/proj/equus/CPTEST/")
 parsers = parser.parse_args()
 
 PATH = parsers.path
