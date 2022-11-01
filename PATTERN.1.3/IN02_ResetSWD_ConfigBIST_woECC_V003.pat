@@ -169,5 +169,6 @@ PATTERN(IN02_ResetSWD_ConfigBIST_woECC_V003, logic)
 %VEC          111H , TSET1
 %VEC          111L , TSET1
 %VEC          111L , TSET1
-%RPT       38 1110 , TSET1
+%VEC          1111 , TSET1
+%RPT       37 1110 , TSET1
 VAR_DONE

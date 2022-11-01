@@ -2,7 +2,7 @@ set_property SRC_FILE_INFO {cfile:/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd
 set_property SRC_FILE_INFO {cfile:/proj/equus/FPGA_TOP/FPGA_TOP.srcs/constrs_1/imports/new/ZSK.xdc rfile:../../../FPGA_TOP.srcs/constrs_1/imports/new/ZSK.xdc id:2} [current_design]
 current_instance fpga_top_i/processing_system7_0/inst
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
-set_input_jitter clk_fpga_0 0.44997
+set_input_jitter clk_fpga_0 30
 set_property src_info {type:SCOPED_XDC file:1 line:31 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN "C12" [get_ports "MIO[53]"]
 set_property src_info {type:SCOPED_XDC file:1 line:37 export:INPUT save:INPUT read:READ} [current_design]

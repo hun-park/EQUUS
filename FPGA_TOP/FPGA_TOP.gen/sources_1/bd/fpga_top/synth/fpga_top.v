@@ -1,7 +1,7 @@
 //Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
-//Date        : Thu Oct  6 19:53:53 2022
+//Date        : Thu Oct 20 17:43:37 2022
 //Host        : yuumi running 64-bit Ubuntu 18.04.6 LTS
 //Command     : generate_target fpga_top.bd
 //Design      : fpga_top
@@ -74,7 +74,7 @@ module fpga_top
   inout IO_FPGA_PIN_2_0;
   inout IO_FPGA_PIN_3_0;
   output O_FPGA_CHECKER_VITAL_0;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.O_FPGA_CLK_0 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.O_FPGA_CLK_0, CLK_DOMAIN fpga_top_LOGIC_TOP_0_239_O_FPGA_CLK, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) output O_FPGA_CLK_0;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.O_FPGA_CLK_0 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.O_FPGA_CLK_0, CLK_DOMAIN fpga_top_LOGIC_TOP_0_263_O_FPGA_CLK, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) output O_FPGA_CLK_0;
   output O_FPGA_DO_0;
   output O_FPGA_LOGIC_PROC_VITAL_0;
   output O_FPGA_LUT_VITAL_0;
@@ -139,7 +139,7 @@ module fpga_top
   assign O_FPGA_PIN_2_0 = LOGIC_TOP_0_O_FPGA_PIN_2;
   assign O_FPGA_PIN_3_0 = LOGIC_TOP_0_O_FPGA_PIN_3;
   assign O_FPGA_RSTN_0 = LOGIC_TOP_0_O_FPGA_RSTN;
-  fpga_top_LOGIC_TOP_0_239 LOGIC_TOP_0
+  fpga_top_LOGIC_TOP_0_263 LOGIC_TOP_0
        (.IO_FPGA_PIN_0(IO_FPGA_PIN_0_0),
         .IO_FPGA_PIN_1(IO_FPGA_PIN_1_0),
         .IO_FPGA_PIN_2(IO_FPGA_PIN_2_0),

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1665053634" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/fpga_top_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1666255430" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/fpga_top_wrapper.dcp">
   <File Type="VDS-TIMINGSUMMARY" Name="fpga_top_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="fpga_top_wrapper.dcp"/>
   <File Type="RDS-UTIL-PB" Name="fpga_top_wrapper_utilization_synth.pb"/>

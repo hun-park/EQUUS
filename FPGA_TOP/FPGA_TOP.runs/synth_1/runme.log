@@ -24,32 +24,32 @@ WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis b
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 3316
+INFO: [Synth 8-7075] Helper process launched with PID 4880
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2713.191 ; gain = 0.000 ; free physical = 5125 ; free virtual = 44363
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2713.199 ; gain = 0.000 ; free physical = 224 ; free virtual = 43851
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'fpga_top_wrapper' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/hdl/fpga_top_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'fpga_top' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:13]
-INFO: [Synth 8-6157] synthesizing module 'fpga_top_LOGIC_TOP_0_239' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_LOGIC_TOP_0_239/synth/fpga_top_LOGIC_TOP_0_239.v:57]
-INFO: [Synth 8-6157] synthesizing module 'LOGIC_TOP' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LOGIC_TOP.v:1]
-INFO: [Synth 8-6157] synthesizing module 'LOGIC_PROC' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LOGIC_PROC.v:1]
-INFO: [Synth 8-155] case statement is not full and has no default [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LOGIC_PROC.v:39]
-INFO: [Synth 8-155] case statement is not full and has no default [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LOGIC_PROC.v:62]
-INFO: [Synth 8-6157] synthesizing module 'LUT' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LUT.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'LUT' (1#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LUT.v:1]
-INFO: [Synth 8-6157] synthesizing module 'CHECKER' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/CHECKER.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'CHECKER' (2#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/CHECKER.v:1]
-WARNING: [Synth 8-6014] Unused sequential element clk_rising_reg was removed.  [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LOGIC_PROC.v:29]
-WARNING: [Synth 8-6014] Unused sequential element NEXT_STATE_reg was removed.  [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LOGIC_PROC.v:110]
-WARNING: [Synth 8-6014] Unused sequential element NEXT_STATE_PAST_reg was removed.  [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LOGIC_PROC.v:155]
-INFO: [Synth 8-6155] done synthesizing module 'LOGIC_PROC' (3#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LOGIC_PROC.v:1]
-INFO: [Synth 8-6157] synthesizing module 'TOGGLE' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/TOGGLE.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'TOGGLE' (4#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/TOGGLE.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'LOGIC_TOP' (5#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/5d36/LOGIC_TOP.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'fpga_top_LOGIC_TOP_0_239' (6#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_LOGIC_TOP_0_239/synth/fpga_top_LOGIC_TOP_0_239.v:57]
-WARNING: [Synth 8-7071] port 'O_FPGA_TRI' of module 'fpga_top_LOGIC_TOP_0_239' is unconnected for instance 'LOGIC_TOP_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:142]
-WARNING: [Synth 8-7071] port 'O_FPGA_VAL' of module 'fpga_top_LOGIC_TOP_0_239' is unconnected for instance 'LOGIC_TOP_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:142]
-WARNING: [Synth 8-7023] instance 'LOGIC_TOP_0' of module 'fpga_top_LOGIC_TOP_0_239' has 20 connections declared, but only 18 given [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:142]
+INFO: [Synth 8-6157] synthesizing module 'fpga_top_LOGIC_TOP_0_263' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_LOGIC_TOP_0_263/synth/fpga_top_LOGIC_TOP_0_263.v:57]
+INFO: [Synth 8-6157] synthesizing module 'LOGIC_TOP' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/258c/LOGIC_TOP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'LOGIC_PROC' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/258c/LOGIC_PROC.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/258c/LOGIC_PROC.v:39]
+INFO: [Synth 8-155] case statement is not full and has no default [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/258c/LOGIC_PROC.v:62]
+INFO: [Synth 8-6157] synthesizing module 'LUT' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/258c/LUT.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'LUT' (1#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/258c/LUT.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CHECKER' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/258c/CHECKER.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CHECKER' (2#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/258c/CHECKER.v:1]
+WARNING: [Synth 8-6014] Unused sequential element clk_rising_reg was removed.  [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/258c/LOGIC_PROC.v:29]
+WARNING: [Synth 8-6014] Unused sequential element NEXT_STATE_reg was removed.  [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/258c/LOGIC_PROC.v:110]
+WARNING: [Synth 8-6014] Unused sequential element NEXT_STATE_PAST_reg was removed.  [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/258c/LOGIC_PROC.v:155]
+INFO: [Synth 8-6155] done synthesizing module 'LOGIC_PROC' (3#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/258c/LOGIC_PROC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'TOGGLE' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/258c/TOGGLE.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'TOGGLE' (4#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/258c/TOGGLE.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'LOGIC_TOP' (5#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ipshared/258c/LOGIC_TOP.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_top_LOGIC_TOP_0_263' (6#1) [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_LOGIC_TOP_0_263/synth/fpga_top_LOGIC_TOP_0_263.v:57]
+WARNING: [Synth 8-7071] port 'O_FPGA_TRI' of module 'fpga_top_LOGIC_TOP_0_263' is unconnected for instance 'LOGIC_TOP_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:142]
+WARNING: [Synth 8-7071] port 'O_FPGA_VAL' of module 'fpga_top_LOGIC_TOP_0_263' is unconnected for instance 'LOGIC_TOP_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:142]
+WARNING: [Synth 8-7023] instance 'LOGIC_TOP_0' of module 'fpga_top_LOGIC_TOP_0_263' has 20 connections declared, but only 18 given [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/synth/fpga_top.v:142]
 INFO: [Synth 8-638] synthesizing module 'fpga_top_proc_sys_reset_0_0' [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/ip/fpga_top_proc_sys_reset_0_0/synth/fpga_top_proc_sys_reset_0_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
@@ -247,18 +247,18 @@ WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module cdc_sync is either uncon
 WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync is either unconnected or has no load
 WARNING: [Synth 8-7129] Port I_WIRE_RSTN in module TOGGLE is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2713.191 ; gain = 0.000 ; free physical = 6050 ; free virtual = 45288
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2713.199 ; gain = 0.000 ; free physical = 1162 ; free virtual = 44761
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2713.191 ; gain = 0.000 ; free physical = 6099 ; free virtual = 45338
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2713.199 ; gain = 0.000 ; free physical = 1223 ; free virtual = 44823
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2713.191 ; gain = 0.000 ; free physical = 6099 ; free virtual = 45338
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2713.199 ; gain = 0.000 ; free physical = 1223 ; free virtual = 44823
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2713.191 ; gain = 0.000 ; free physical = 6094 ; free virtual = 45333
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2713.199 ; gain = 0.000 ; free physical = 1218 ; free virtual = 44817
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -283,24 +283,24 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/fpga_top_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2777.113 ; gain = 0.000 ; free physical = 6005 ; free virtual = 45244
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2777.121 ; gain = 0.000 ; free physical = 1130 ; free virtual = 44729
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 13 instances were transformed.
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2777.113 ; gain = 0.000 ; free physical = 6005 ; free virtual = 45244
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2777.121 ; gain = 0.000 ; free physical = 1130 ; free virtual = 44729
 WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2777.113 ; gain = 63.922 ; free physical = 6083 ; free virtual = 45322
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2777.121 ; gain = 63.922 ; free physical = 1207 ; free virtual = 44806
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2777.113 ; gain = 63.922 ; free physical = 6083 ; free virtual = 45322
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2777.121 ; gain = 63.922 ; free physical = 1207 ; free virtual = 44806
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -312,10 +312,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for fpga_top_i/processing_system7_0. 
 Applied set_property KEEP_HIERARCHY = SOFT for fpga_top_i/proc_sys_reset_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for fpga_top_i/LOGIC_TOP_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2777.113 ; gain = 63.922 ; free physical = 6083 ; free virtual = 45322
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2777.121 ; gain = 63.922 ; free physical = 1206 ; free virtual = 44806
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2777.113 ; gain = 63.922 ; free physical = 6073 ; free virtual = 45313
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2777.121 ; gain = 63.922 ; free physical = 1197 ; free virtual = 44798
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -379,20 +379,20 @@ WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused a
 WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2777.113 ; gain = 63.922 ; free physical = 6047 ; free virtual = 45292
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2777.121 ; gain = 63.922 ; free physical = 1173 ; free virtual = 44778
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 ROM: Preliminary Mapping Report
-+-------------------------+--------------------------------+---------------+----------------+
-|Module Name              | RTL Object                     | Depth x Width | Implemented As | 
-+-------------------------+--------------------------------+---------------+----------------+
-|LUT                      | dout                           | 2048x27       | LUT            | 
-|fpga_top_LOGIC_TOP_0_239 | inst/u_LOGIC_PROC/u_LUT_2/dout | 2048x27       | LUT            | 
-|fpga_top_LOGIC_TOP_0_239 | inst/u_LOGIC_PROC/u_LUT_1/dout | 2048x27       | LUT            | 
-+-------------------------+--------------------------------+---------------+----------------+
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|LUT         | dout       | 2048x28       | LUT            | 
+|LUT         | dout       | 2048x28       | LUT            | 
+|LUT         | dout       | 2048x28       | LUT            | 
++------------+------------+---------------+----------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -401,19 +401,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2793.098 ; gain = 79.906 ; free physical = 5777 ; free virtual = 45021
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2792.105 ; gain = 78.906 ; free physical = 899 ; free virtual = 44504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2826.121 ; gain = 112.930 ; free physical = 5762 ; free virtual = 45007
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2825.129 ; gain = 111.930 ; free physical = 883 ; free virtual = 44488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2836.137 ; gain = 122.945 ; free physical = 5761 ; free virtual = 45005
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2836.152 ; gain = 122.953 ; free physical = 881 ; free virtual = 44486
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -435,37 +435,37 @@ CRITICAL WARNING: [Synth 8-5744] Inout buffer is not created at top module fpga_
 CRITICAL WARNING: [Synth 8-5744] Inout buffer is not created at top module fpga_top_wrapper for the pin O_FPGA_PIN_2_0, other connections may not have buffer connection [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/hdl/fpga_top_wrapper.v:12]
 CRITICAL WARNING: [Synth 8-5744] Inout buffer is not created at top module fpga_top_wrapper for the pin O_FPGA_PIN_3_0, other connections may not have buffer connection [/proj/equus/FPGA_TOP/FPGA_TOP.gen/sources_1/bd/fpga_top/hdl/fpga_top_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.137 ; gain = 122.945 ; free physical = 5761 ; free virtual = 45006
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.152 ; gain = 122.953 ; free physical = 882 ; free virtual = 44486
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.137 ; gain = 122.945 ; free physical = 5761 ; free virtual = 45006
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.152 ; gain = 122.953 ; free physical = 882 ; free virtual = 44486
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.137 ; gain = 122.945 ; free physical = 5761 ; free virtual = 45006
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.152 ; gain = 122.953 ; free physical = 882 ; free virtual = 44486
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.137 ; gain = 122.945 ; free physical = 5761 ; free virtual = 45006
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.152 ; gain = 122.953 ; free physical = 882 ; free virtual = 44486
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.137 ; gain = 122.945 ; free physical = 5761 ; free virtual = 45006
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.152 ; gain = 122.953 ; free physical = 882 ; free virtual = 44486
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.137 ; gain = 122.945 ; free physical = 5761 ; free virtual = 45006
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.152 ; gain = 122.953 ; free physical = 882 ; free virtual = 44486
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -483,19 +483,19 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BIBUF  |   130|
 |2     |BUFG   |     1|
-|3     |CARRY4 |    32|
-|4     |LUT1   |    37|
-|5     |LUT2   |    27|
-|6     |LUT3   |    33|
-|7     |LUT4   |    46|
-|8     |LUT5   |    99|
-|9     |LUT6   |   456|
-|10    |MUXF7  |   107|
-|11    |MUXF8  |    25|
+|3     |CARRY4 |    26|
+|4     |LUT1   |    35|
+|5     |LUT2   |    18|
+|6     |LUT3   |    32|
+|7     |LUT4   |    71|
+|8     |LUT5   |   101|
+|9     |LUT6   |   435|
+|10    |MUXF7  |   102|
+|11    |MUXF8  |    20|
 |12    |PS7    |     1|
 |13    |SRL16  |     1|
-|14    |FDCE   |   109|
-|15    |FDPE   |     3|
+|14    |FDCE   |    88|
+|15    |FDPE   |     2|
 |16    |FDR    |     4|
 |17    |FDRE   |    23|
 |18    |FDSE   |     4|
@@ -503,30 +503,30 @@ Report Cell Usage:
 |20    |OBUF   |    15|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.137 ; gain = 122.945 ; free physical = 5761 ; free virtual = 45006
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.152 ; gain = 122.953 ; free physical = 882 ; free virtual = 44486
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 4 critical warnings and 92 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2836.137 ; gain = 59.023 ; free physical = 5814 ; free virtual = 45059
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2836.145 ; gain = 122.945 ; free physical = 5814 ; free virtual = 45059
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2836.152 ; gain = 59.031 ; free physical = 934 ; free virtual = 44539
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2836.160 ; gain = 122.953 ; free physical = 934 ; free virtual = 44539
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2836.145 ; gain = 0.000 ; free physical = 5906 ; free virtual = 45151
-INFO: [Netlist 29-17] Analyzing 173 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2836.160 ; gain = 0.000 ; free physical = 1024 ; free virtual = 44629
+INFO: [Netlist 29-17] Analyzing 157 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2882.027 ; gain = 0.000 ; free physical = 5839 ; free virtual = 45084
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2882.043 ; gain = 0.000 ; free physical = 958 ; free virtual = 44563
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 9 instances were transformed.
   FDR => FDRE: 4 instances
   IOBUF => IOBUF (IBUF, OBUFT): 4 instances
   SRL16 => SRL16E: 1 instance 
 
-Synth Design complete, checksum: 607450db
+Synth Design complete, checksum: 72a0f1ec
 INFO: [Common 17-83] Releasing license: Synthesis
 82 Infos, 173 Warnings, 4 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:29 . Memory (MB): peak = 2882.027 ; gain = 168.945 ; free physical = 6191 ; free virtual = 45435
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:29 . Memory (MB): peak = 2882.043 ; gain = 168.953 ; free physical = 1307 ; free virtual = 44912
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint '/proj/equus/FPGA_TOP/FPGA_TOP.runs/synth_1/fpga_top_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file fpga_top_wrapper_utilization_synth.rpt -pb fpga_top_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Oct  6 19:54:36 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 20 17:44:32 2022...

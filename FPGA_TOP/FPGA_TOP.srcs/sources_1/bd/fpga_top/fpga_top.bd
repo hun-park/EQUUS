@@ -101,7 +101,7 @@
         "direction": "O",
         "parameters": {
           "CLK_DOMAIN": {
-            "value": "fpga_top_LOGIC_TOP_0_239_O_FPGA_CLK",
+            "value": "fpga_top_LOGIC_TOP_0_263_O_FPGA_CLK",
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
@@ -192,7 +192,7 @@
             "value": "10.000000"
           },
           "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "66.666672"
+            "value": "1.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -249,7 +249,7 @@
             "value": "666.666667"
           },
           "PCW_CLK0_FREQ": {
-            "value": "66666672"
+            "value": "1000000"
           },
           "PCW_CLK1_FREQ": {
             "value": "10000000"
@@ -312,7 +312,7 @@
             "value": "1"
           },
           "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "66.666000"
+            "value": "1.000000"
           },
           "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
             "value": "150.000000"
@@ -1101,9 +1101,9 @@
         "inst_hier_path": "proc_sys_reset_0"
       },
       "LOGIC_TOP_0": {
-        "vlnv": "user.org:user:LOGIC_TOP:5.4",
-        "xci_name": "fpga_top_LOGIC_TOP_0_239",
-        "xci_path": "ip/fpga_top_LOGIC_TOP_0_239/fpga_top_LOGIC_TOP_0_239.xci",
+        "vlnv": "user.org:user:LOGIC_TOP:5.1",
+        "xci_name": "fpga_top_LOGIC_TOP_0_263",
+        "xci_path": "ip/fpga_top_LOGIC_TOP_0_263/fpga_top_LOGIC_TOP_0_263.xci",
         "inst_hier_path": "LOGIC_TOP_0"
       }
     },

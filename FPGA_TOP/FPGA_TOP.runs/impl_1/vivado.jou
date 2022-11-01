@@ -2,12 +2,12 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Thu Oct  6 19:54:41 2022
-# Process ID: 3632
+# Start of session at: Thu Oct 20 17:44:36 2022
+# Process ID: 5195
 # Current directory: /proj/equus/FPGA_TOP/FPGA_TOP.runs/impl_1
 # Command line: vivado -log fpga_top_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fpga_top_wrapper.tcl -notrace
 # Log file: /proj/equus/FPGA_TOP/FPGA_TOP.runs/impl_1/fpga_top_wrapper.vdi
 # Journal file: /proj/equus/FPGA_TOP/FPGA_TOP.runs/impl_1/vivado.jou
-# Running On: yuumi, OS: Linux, CPU Frequency: 2123.193 MHz, CPU Physical cores: 12, Host memory: 16774 MB
+# Running On: yuumi, OS: Linux, CPU Frequency: 2195.365 MHz, CPU Physical cores: 12, Host memory: 16774 MB
 #-----------------------------------------------------------
 source fpga_top_wrapper.tcl -notrace
